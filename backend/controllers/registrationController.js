@@ -59,6 +59,7 @@ module.exports = function(app, conn){
 				return false;
 			}
 			var post  = {
+				name:req.body.name,
 				email:req.body.email,
 				password:req.body.password,
 				gender:req.body.gender

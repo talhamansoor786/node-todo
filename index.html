@@ -18,11 +18,12 @@
 		  <input type="radio" name="sex" id="sex_m" class="register-switch-input" value="M" ng-model="Ctrl.gender">
 		  <label for="sex_m" class="register-switch-label">Male</label>
 		</div>
+		<input type="text" class="register-input" placeholder="Name" ng-model="Ctrl.name" required pattern="^[a-zA-Z][a-zA-Z ]{1,}$">
 		<input type="email" class="register-input" placeholder="Email address" ng-model="Ctrl.email" required>
 		<input type="password" class="register-input" name="password" placeholder="Password" ng-model="Ctrl.password" required>
 		<input type="password" class="register-input" name="confirm" placeholder="Confirm Password" ng-model="Ctrl.confirmPassword" required>
 		<p class="error" ngif="Ctrl.errorText" ng-cloak>{{Ctrl.errorText}}</p>
-		<input type="submit" value="Create Account" class="register-button">
+		<input type="submit" value="{{Ctrl.submitBtnText}}" class="register-button" ng-disabled="Ctrl.submitBtnText=='Loading...'">
 		<a href="login.html" class="login-btn">Login</a>
 	</form>
  </body>
