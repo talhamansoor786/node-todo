@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="mainApp">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css?family=Calligraffitti|Parisienne|Reenie+Beanie|Waiting+for+the+Sunrise" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/todo.css">
+ </head>
+ <body>
+	<h1 class="register-title">Welcome</h1>
+	<div ng-view></div>
+ </body>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-resource.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-cookies.min.js"></script>
+	<script type="text/javascript" src="js/app/app.js"></script>
+	<script type="text/javascript" src="js/controllers/main.js"></script>
+</html>
